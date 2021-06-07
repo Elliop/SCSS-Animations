@@ -1,0 +1,55 @@
+body {
+  background-color: #edf6f7;
+}
+// Button Animation
+
+$cd-btn: #011c37;
+$cd-txt: #15dea5;
+.btn {
+  margin: 10rem;
+  background: $cd-btn;
+  color: $cd-txt;
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+// Form Validation
+
+$cd-txt2: #6300a0;
+$cd-box: #fff;
+$cd-txt--invalid: #fff;
+$cd-danger: #b20a37;
+
+.form {
+  margin: 10rem;
+  &__group {
+    & input {
+      border: 2px solid $cd-box;
+      border-radius: 100rem;
+      color: $cd-txt2;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+      outline: none;
+      padding: 0.5rem 1.5rem;
+      width: 100%;
+      transition: background-color 500ms;
+      &:focus {
+        border: 2px solid $cd-txt2;
+      }
+      &:not(:focus):invalid {
+        background-color: $cd-danger;
+        border: 2px solid $cd-danger;
+        color: $cd-txt--invalid;
+      }
+    }
+  }
+}
