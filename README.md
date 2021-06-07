@@ -1,4 +1,6 @@
-# CSS-Animations
+# SCSS-Animations
+
+Creating some animations using sass.
 
 <h2>Button Growing</h2>
 
